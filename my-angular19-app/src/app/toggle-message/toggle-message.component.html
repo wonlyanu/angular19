@@ -1,0 +1,8 @@
+<div class="container">
+  <button (click)="toggleMessage()">
+    {{ showMessage ? 'Hide' : 'Show' }} Message
+  </button>
+  <p *ngIf="showMessage" class="message">
+    Hello! This is a toggled message.
+  </p>
+</div>
